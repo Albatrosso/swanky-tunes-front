@@ -39,7 +39,6 @@ export default class Music extends Vue {
     axios.get('http://localhost:3000/music')
       .then((response) => {
         this.songCard = response.data;
-        console.log(response);
       });
   }
 }

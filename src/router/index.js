@@ -6,6 +6,7 @@ import Dates from '../pages/Dates.vue';
 import DemoDrop from '../pages/DemoDrop.vue';
 import Contacts from '../pages/Contacts.vue';
 import NotFound from '../pages/NotFound.vue';
+import Login from '../pages/admin/Login.vue';
 
 Vue.use(VueRouter);
 
@@ -34,6 +35,11 @@ const routes = [
     path: '/contacts',
     name: 'contacts',
     component: Contacts,
+  },
+  {
+    path: '/swanky/trio/rule',
+    name: 'login',
+    component: Login,
   },
   {
     path: '*',
