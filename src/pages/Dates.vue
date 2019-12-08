@@ -19,9 +19,7 @@
          data-language="en"
          data-display-start-time="true"/>
     </div>
-    <div class="footer-menu__wrapper">
       <footerMenu/>
-    </div>
   </div>
 </template>
 <script>
@@ -39,11 +37,9 @@ export default class TourDates extends Vue {
     .main-background();
     .fullscreen();
     .flex-layout();
+    .fix-height();
     height: auto;
     min-height: 100vh;
-  }
-  .footer-menu__wrapper {
-    .flex-container();
   }
   .dates__main {
     .flex-container();

@@ -3,9 +3,7 @@
     <h1 class="visually-hidden">Demo drop</h1>
     <navMenu></navMenu>
     <demoForm></demoForm>
-    <div class="footer-menu__wrapper">
-      <footerMenu></footerMenu>
-    </div>
+    <footerMenu></footerMenu>
   </div>
 </template>
 
@@ -27,9 +25,7 @@ export default class DemoDrop extends Vue {
     .fullscreen();
     .main-background();
     .flex-layout();
-  }
-  .footer-menu__wrapper {
-    .flex-container();
+    .fix-height();
   }
   @media (min-width: 768px) {
     .demo-drop {

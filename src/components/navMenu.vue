@@ -1,46 +1,48 @@
 <template>
     <div class="nav-menu">
-      <nav class="main-navigation">
-        <span class="main-navigation__logo">Swanky Tunes</span>
-        <button class="main-navigation__toggle" @click="showSideBar">
-          <sidemenu width="25" height="25" :fill="fillColor"/>
-        </button>
-        <sidebarMenu v-if="sideBar"/>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <router-link class="main-navigation__link" to="/music">Music</router-link>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="https://www.youtube.com/playlist?list=PL9W0uKtpnSDAb9NvRcxbosp5DzKWT2wGo" target="_blank" rel="noopener">Videos</a>
-          </li>
-          <li class="main-navigation__item">
-            <router-link class="main-navigation__link" to="/dates">Tour dates</router-link>
-          </li>
-          <li class="main-navigation__item main-navigation__item--dropdown">
-            <a class="main-navigation__link--dropdown" href="#">Radio show</a>
-            <ul class="sub-navigation__list">
-              <li class="sub-navigation__item">
-                <a class="sub-navigation__link" href="https://podcasts.apple.com/ru/podcast/swanky-tunes-showland-podcast/id923114101" target="_blank" rel="noopener">
-                  <span class="visually-hidden">Apple podcasts</span>
-                  <applpdcst class="main-navigation__icon" width="40" height="40"/>
-                </a>
-              </li>
-              <li class="sub-navigation__item">
-                <a class="sub-navigation__link" href="https://www.mixcloud.com/swankytunes/" target="_blank" rel="noopener">
-                  <span class="visually-hidden">Mixcloud</span>
-                  <mixcloud class="main-navigation__icon" width="40" height="40"/>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="main-navigation__item">
-            <router-link class="main-navigation__link" to="/demo-drop">Demo drop</router-link>
-          </li>
-          <li class="main-navigation__item">
-            <router-link class="main-navigation__link" to="/contacts">Contacts</router-link>
-          </li>
-        </ul>
-      </nav>
+      <div class="main-navigation__wrapper">
+        <nav class="main-navigation">
+          <span class="main-navigation__logo">Swanky Tunes</span>
+          <button class="main-navigation__toggle" @click="showSideBar">
+            <sidemenu width="25" height="25" :fill="fillColor"/>
+          </button>
+          <sidebarMenu v-if="sideBar"/>
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <router-link class="main-navigation__link" to="/music">Music</router-link>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="https://www.youtube.com/playlist?list=PL9W0uKtpnSDAb9NvRcxbosp5DzKWT2wGo" target="_blank" rel="noopener">Videos</a>
+            </li>
+            <li class="main-navigation__item">
+              <router-link class="main-navigation__link" to="/dates">Tour dates</router-link>
+            </li>
+            <li class="main-navigation__item main-navigation__item--dropdown">
+              <a class="main-navigation__link--dropdown" href="#">Radio show</a>
+              <ul class="sub-navigation__list">
+                <li class="sub-navigation__item">
+                  <a class="sub-navigation__link" href="https://podcasts.apple.com/ru/podcast/swanky-tunes-showland-podcast/id923114101" target="_blank" rel="noopener">
+                    <span class="visually-hidden">Apple podcasts</span>
+                    <applpdcst class="main-navigation__icon" width="40" height="40"/>
+                  </a>
+                </li>
+                <li class="sub-navigation__item">
+                  <a class="sub-navigation__link" href="https://www.mixcloud.com/swankytunes/" target="_blank" rel="noopener">
+                    <span class="visually-hidden">Mixcloud</span>
+                    <mixcloud class="main-navigation__icon" width="40" height="40"/>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-navigation__item">
+              <router-link class="main-navigation__link" to="/demo-drop">Demo drop</router-link>
+            </li>
+            <li class="main-navigation__item">
+              <router-link class="main-navigation__link" to="/contacts">Contacts</router-link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
 </template>
 
@@ -76,12 +78,19 @@ export default class NavMenu extends Vue {
   .nav-menu {
     height: 0;
   }
-  .main-navigation {
+  .main-navigation__wrapper {
+    position: relative;
     .flex-container();
+  }
+  .main-navigation {
+    width: 100%;
     padding: 25px 0;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
+    position: absolute;
+    left: 0;
+    background-size: cover;
   }
   .main-navigation__list {
     display: none;

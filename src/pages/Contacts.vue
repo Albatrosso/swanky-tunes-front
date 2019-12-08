@@ -3,9 +3,7 @@
     <h1 class="visually-hidden">Contacts</h1>
     <navMenu/>
     <contactsMain/>
-    <div class="footer-menu__wrapper">
-      <footerMenu/>
-    </div>
+    <footerMenu/>
   </div>
 </template>
 
@@ -27,8 +25,6 @@ export default class Contacts extends Vue {
     .main-background();
     .fullscreen();
     .flex-layout();
-  }
-  .footer-menu__wrapper {
-    .flex-container();
+    .fix-height();
   }
 </style>

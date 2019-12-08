@@ -62,6 +62,7 @@ export default class demoForm extends Vue {
 .form__button {
   width: 65px;
   padding: 0;
+  margin-bottom: 25px;
   background-color: transparent;
   border: none;
   position: relative;

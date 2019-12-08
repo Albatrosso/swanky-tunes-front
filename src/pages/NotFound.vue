@@ -17,6 +17,7 @@ export default class NotFound extends Vue {
 .not-found {
   .fullscreen();
   .main-background();
+  .fix-height();
   display: flex;
   justify-content: center;
   align-items: center;

@@ -29,6 +29,7 @@ export default class Home extends Vue {
   }
   .home__wrapper {
     .flex-layout();
+    .fix-height();
   }
   .container {
     @media (min-width: 768px) {
