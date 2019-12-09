@@ -63,7 +63,7 @@ const init = async () => {
       },
       {
         id: 8,
-        poster: '../assets/img/virus.jpg',
+        poster: 'https://drive.google.com/open?id=1NEaITwMEn7OzF2sMZec5ZoFKMkpwgSpo',
         name: 'Virus',
         author: 'Swanky Tunes',
         year: '2019',
