@@ -1,9 +1,9 @@
 <template>
   <div class="demo-drop">
     <h1 class="visually-hidden">Demo drop</h1>
-    <navMenu></navMenu>
-    <demoForm></demoForm>
-    <footerMenu></footerMenu>
+    <navMenu/>
+    <demoForm/>
+    <footerMenu/>
   </div>
 </template>
 

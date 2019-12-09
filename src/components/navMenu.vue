@@ -75,10 +75,8 @@ export default class NavMenu extends Vue {
 </script>
 
 <style scoped lang="less">
-  .nav-menu {
-    height: 0;
-  }
   .main-navigation__wrapper {
+    background-image: url("../assets/img/bgtexture.png");
     position: relative;
     .flex-container();
   }
@@ -90,7 +88,6 @@ export default class NavMenu extends Vue {
     font-size: 20px;
     position: absolute;
     left: 0;
-    background-size: cover;
   }
   .main-navigation__list {
     display: none;
@@ -106,9 +103,6 @@ export default class NavMenu extends Vue {
     background-color: transparent;
   }
   @media (min-width: 768px) {
-    .nav-menu {
-      height: auto;
-    }
     .main-navigation {
       padding: 40px 0 30px;
     }

@@ -40,14 +40,19 @@ export default class Music extends Vue {
     .main-background();
     .fix-height();
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
   }
   @media (min-width: 768px) {
     .music__wrapper {
       .flex-container();
+      height: 76%; /*TEMPORARY*/
+      box-sizing: border-box;
+      padding: 0 10px;
+      overflow: scroll;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 </style>

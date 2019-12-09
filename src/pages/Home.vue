@@ -2,9 +2,9 @@
   <div class="home">
     <div class="container home__wrapper">
       <h1 class="visually-hidden">Swanky Tunes</h1>
-      <navMenuHome></navMenuHome>
-      <mainLogo class="main-logo"></mainLogo>
-      <footerMenuHome></footerMenuHome>
+      <navMenuHome/>
+      <mainLogo class="main-logo"/>
+      <footerMenuHome/>
     </div>
   </div>
 </template>
