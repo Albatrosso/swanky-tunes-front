@@ -42,6 +42,11 @@ const routes = [
     component: Login,
   },
   {
+    path: '/swanky/trio/rule/dashboard',
+    name: 'dashboard',
+    component: () => import('../pages/admin/Dashboard.vue'),
+  },
+  {
     path: '*',
     name: 'NotFound',
     component: NotFound,
