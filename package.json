@@ -9,7 +9,7 @@
     "mocks": "node mocks/server.js"
   },
   "dependencies": {
-    "@hapi/hapi": "^18.4.0",
+    "@hapi/hapi": "^19.0.0",
     "axios": "^0.19.2",
     "core-js": "^3.3.2",
     "howler": "^2.2.0",
